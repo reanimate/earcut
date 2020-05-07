@@ -6,8 +6,6 @@ import qualified Data.Vector as V
 import Foreign
 import Foreign.C.Types
 import System.IO.Unsafe
-import Data.Word
--- import Data.Linear
 
 -- foreign import ccall tester :: IO Int
 foreign import ccall "earcut"
@@ -30,5 +28,3 @@ earcut' polygon = unsafePerformIO $
     len <- peek outLen
     out <- newForeignPtr_ =<< peek outPtr
     return $ S.unsafeFromForeignPtr0 out (fromIntegral len)
-
-test = earcut $ [(0,0), (1,0), (1,1), (0,1)]
