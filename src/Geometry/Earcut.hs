@@ -13,7 +13,7 @@ import Data.Word
 foreign import ccall "earcut"
   c_earcut :: Ptr Double -> Int -> Ptr (Ptr Word32) -> Ptr CULong -> IO ()
 
-earcut :: [(Double, Double)] -> (V.Vector (Int,Int,Int))
+earcut :: [(Double, Double)] -> V.Vector (Int,Int,Int)
 earcut p =
   let out = earcut' (S.fromList $ concat [ [x,y] | (x,y) <- p ])
   in V.generate (S.length out `div` 3) $ \i ->
