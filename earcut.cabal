@@ -3,7 +3,7 @@ cabal-version:       2.4
 -- For further documentation, see http://haskell.org/cabal/users-guide/
 
 name:                earcut
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Binding to C++ earcut library.
 -- description:
 -- bug-reports:
@@ -14,7 +14,7 @@ maintainer:          lemmih@gmail.com
 copyright:           ISC
 homepage:            https://github.com/reanimate/earcut
 category:            Math
-extra-source-files:  CHANGELOG.md, README.md
+extra-source-files:  CHANGELOG.md, README.md, cbits/earcut.hpp
 
 library
   exposed-modules:     Geometry.Earcut
