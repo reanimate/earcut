@@ -14,7 +14,7 @@ maintainer:          lemmih@gmail.com
 copyright:           ISC
 homepage:            https://github.com/reanimate/earcut
 category:            Math
-extra-source-files:  CHANGELOG.md, README.md, cbits/earcut.hpp
+extra-source-files:  README.md, cbits/earcut.hpp
 
 library
   exposed-modules:     Geometry.Earcut
