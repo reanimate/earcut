@@ -3,7 +3,7 @@ cabal-version:       2.2
 -- For further documentation, see http://haskell.org/cabal/users-guide/
 
 name:                earcut
-version:             0.1.0.2
+version:             0.1.0.3
 synopsis:            Binding to C++ earcut library.
 -- description:
 -- bug-reports:
